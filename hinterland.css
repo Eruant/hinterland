@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    background: hsl(240, 20%, 20%);
+    color: hsl(240, 20%, 80%);
+}
+
+.main article ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main article ul li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: solid 1px hsl(240, 20%, 80%);
+}
+
+.main article ul li:first-child {
+    border-top: solid 1px hsl(240, 20%, 80%);
+}

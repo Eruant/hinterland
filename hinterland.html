@@ -3,9 +3,21 @@
 </head>
 
 <body>
-  {{> main}}
+    <section class="main">
+        <header>
+            <h1>Welcome to hinterland</h1>
+        </header>
+
+        <article>
+            <ul>
+                {{#each rooms}}
+                    {{> room}}
+                {{/each}}
+            </ul>
+        </article>
+    </section>
 </body>
 
-<template name="main">
-  <h1>Welcome to hinterland</h1>
+<template name="room">
+    <li>{{text}}</li>
 </template>
