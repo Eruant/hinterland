@@ -11,13 +11,11 @@
         <article>
             <ul>
                 {{#each rooms}}
-                    {{> room}}
+                    <li>
+                        <span>{{text}}</span>
+                    </li>
                 {{/each}}
             </ul>
         </article>
     </section>
 </body>
-
-<template name="room">
-    <li>{{text}}</li>
-</template>
