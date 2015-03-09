@@ -9,13 +9,18 @@
         </header>
 
         <article>
-            <ul>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Slots</th>
+                </tr>
                 {{#each rooms}}
-                    <li>
-                        <span>{{text}}</span>
-                    </li>
+                    <tr>
+                        <td>{{ text }}</td>
+                        <td>{{ slotsFilled }} / {{ slotsTotal }}</td>
+                    </tr>
                 {{/each}}
-            </ul>
+            </table>
         </article>
     </section>
 </body>
